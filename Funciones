@@ -1,0 +1,19 @@
+void main() {
+  for (int i = 0; i < 5; i++) {
+    print('hello ${i + 1}');
+  }
+
+  String nombre = 'Oscar';
+  String mensaje = 'Greetings';
+  saludar(nombre);
+
+  saludar2(mensaje: mensaje, nombre: nombre);
+}
+
+void saludar(String nombre, [String mensaje = 'Hola']) {
+  print('$mensaje $nombre');
+}
+
+void saludar2({String nombre = 'Sin Nombre', required String? mensaje}) {
+  print('$mensaje $nombre');
+}
